@@ -3,11 +3,11 @@
 
 Weather Application built to understand basics of React Native introduces city selection, fetching weather data, and rendering UI elements for practical learning.
 [Short Demo Video](https://drive.google.com/file/d/1Enerqtij1bgkM1a4NmMR8Km2thOXkJ2q/view?usp=sharing)
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Video Walkthrough of the project
 
  - [Attach a brief video walkthrough of Weather application]()
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Brief Explaination :-
     

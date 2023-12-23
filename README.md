@@ -62,13 +62,45 @@ Display weather information for the selected city.
 **Responsibility:** 
 To store mock weather data.
 
-## FAQ
 
-#### Question 1
+## Follow-up Questions :-
 
-Answer 1
+#### 1. How did you implement the city selection functionality in the CitySelector component?
+- In the CitySelector component, I used Picker component provided by React Native to create a drop down list of all the cities present in the data. 
+- The Picker component was then populated with city names from the cities prop array(Passed through parent component). 
+- On selection of a city from the dropdown, the onValueChange event was used to trigger the handleCityChange function, updating the selected city state.
 
-#### Question 2
+#### 2. Did you encounter any challenges while integrating the Picker component for city selection?
+- It was straightforward to create the Picker component. 
+- However, managing the state update within the App.js component posed a bit of a challenge. 
+- Additionally, I attempted to apply CSS to the picker item, but later realized that I was using a deprecated package. 
+- After installing the correct version of that package, I was able to work with it properly.
 
-Answer 2
+#### 3. What styling did you apply using StyleSheet.create to format the displayed weather data?
+- I applied basic styling using StyleSheet.create to format the displayed weather data. 
+- Specifically, I used styles for Text components to control the font size, color, and alignment for displaying the city name, temperature, and weather description and background color for the main container.
+
+#### 4. Were there any specific considerations while displaying the weather description for the selected city?
+- Yes, The weather descriptions were displayed using a Text component, presenting a description (eg. sunny, cloudy, etc.) obtained from the description prop.
+
+#### 5. How did you manage state changes when a new city is selected?
+- State changes when a new city is selected.
+- It was managed via the handleCitySelect function within the App component. 
+- This function updated the selectedWeather state with the weather information for the newly selected city obtained from the weatherData object.
+
+#### 6. Could you elaborate on how the App component communicates with the CitySelector and WeatherDisplay components?
+- The App component rendered the CitySelector and WeatherDisplay components. 
+- It passed down necessary props to CitySelector:
+    
+    a. CitySelector: cities array and the handleCitySelect function.
+
+    b. WeatherDisplay: weather information for the initially selected city.
+
+#### 7. What approach did you take to handle asynchronous data fetching for weather information?
+- In this project, the weatherData object was mocked to simulate weather information. 
+- For a real-world scenario involving API calls for weather data, I would utilize asynchronous functions such as fetch or Axios to fetch data and update the state accordingly.
+
+#### 8. How did you structure the code for better readability and maintainability within the project?
+- I have structured the code by separating components into individual files (WeatherDisplay, CitySelector) for better organization. 
+- Meaningful variable names were used to enhance readability and maintainability.
 

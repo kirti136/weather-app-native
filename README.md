@@ -25,7 +25,7 @@ Acts as the main component that integrates WeatherDisplay and CitySelector.
 - Provides the handleCitySelect function, which updates the selectedWeather state based on the selected city.
 - Passes necessary props to CitySelector and WeatherDisplay, including the list of cities and weather information for the default city (first city in the list).
 
-    .....................................................................................................................................
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **2. CitySelector Component:**
 
@@ -41,8 +41,7 @@ Allows the user to select a city from a predefined list.
 - When the user selects a city, it triggers the handleCityChange function, updating the selected city state and invoking the onCitySelect callback with the selected city.
 
 
-    .....................................................................................................................................
-
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 **3. WeatherDisplay Component:**
 
 **Responsibility:** 
@@ -57,8 +56,7 @@ Display weather information for the selected city.
 **Behavior:**
 - Uses React Native's Text component to display city name, temperature, and weather description.
 
-    .....................................................................................................................................
-
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 **3. weatherData.js :** 
 
 **Responsibility:** 

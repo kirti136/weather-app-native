@@ -19,7 +19,7 @@ Acts as the main component that integrates WeatherDisplay and CitySelector.
 - Imports WeatherDisplay, CitySelector, and the weatherData object (mock weather information).
 - Initializes the cities array by extracting city names from the weatherData object keys.
 - Provides the handleCitySelect function, which updates the selectedWeather state based on the selected city.
-- Passes necessary props to CitySelector and WeatherDisplay, including the list of cities and weather information for the default city (first city in the list).
+- Passes necessary props to CitySelector and WeatherDisplay.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 

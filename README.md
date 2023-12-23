@@ -11,7 +11,7 @@ Weather Application built to understand basics of React Native introduces city s
 
 ## Brief Explaination :-
     
-**1. App Component:**
+###1. App Component:
 
 **Responsibility:** 
 Acts as the main component that integrates WeatherDisplay and CitySelector.

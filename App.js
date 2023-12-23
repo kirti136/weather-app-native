@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
-import WeatherDisplay from "./screen/components/WeatherDisplay";
-import CitySelector from "./screen/components/CitySelector";
+import WeatherDisplay from "./screen/Home/WeatherDisplay";
+import CitySelector from "./screen/Home/CitySelector";
 import { weatherData } from "./screen/utils/weatherData";
 
 const App = () => {

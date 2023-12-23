@@ -18,6 +18,7 @@ Acts as the main component that integrates WeatherDisplay and CitySelector.
 
 **State:**
 - **selectedWeather:** Holds the weather information for the currently selected city.
+  
 **Behavior:**
 - Imports WeatherDisplay, CitySelector, and the weatherData object (mock weather information).
 - Initializes the cities array by extracting city names from the weatherData object keys.

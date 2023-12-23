@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import { Picker } from "@react-native-picker/picker";
 
 const CitySelector = ({ cities, onCitySelect }) => {
-  const [selectedCity, setSelectedCity] = useState(cities[0]);
-  const [selectedLanguage, setSelectedLanguage] = useState();
+  const [selectedCity, setSelectedCity] = useState(null);
 
   const handleCityChange = (city) => {
     setSelectedCity(city);
@@ -18,8 +17,6 @@ const CitySelector = ({ cities, onCitySelect }) => {
       <View style={styles.pickerContainer}>
         <Picker
           selectedValue={selectedCity}
-          style={styles.picker}
-          itemStyle={styles.pickerItem}
           onValueChange={(itemValue) => handleCityChange(itemValue)}
         >
           {cities.map((city) => (
@@ -27,13 +24,6 @@ const CitySelector = ({ cities, onCitySelect }) => {
           ))}
         </Picker>
       </View>
-      <Picker
-        selectedValue={selectedLanguage}
-        onValueChange={(itemValue, itemIndex) => setSelectedLanguage(itemValue)}
-      >
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
-      </Picker>
     </View>
   );
 };
@@ -46,18 +36,12 @@ CitySelector.propTypes = {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 40,
-    position: "relative",
   },
   text: {
-    fontSize: 25,
-    position: "absolute",
+    fontSize: 39,
   },
   pickerContainer: {
     width: 150,
-  },
-  pickerItem: {
-    width: 100,
-    height: 100,
   },
 });
 

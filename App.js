@@ -8,6 +8,7 @@ const App = () => {
   const cities = Object.keys(weatherData);
   const [selectedWeather, setSelectedWeather] = useState(null);
 
+
   const handleCitySelect = (city) => {
     const weather = weatherData[city];
     if (weather) {
@@ -35,6 +36,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     // marginTop:200
+    backgroundColor: "#ffd3b6",
   },
 });
 

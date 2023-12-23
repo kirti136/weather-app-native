@@ -1,15 +1,11 @@
 
 # Weather Application
 
-Weather Application built to understand basics of React Native introduces city selection, fetching weather data, and rendering UI elements for practical learning.
+Weather Application built to understand the basics of React Native introduces city selection, fetching weather data, and rendering UI elements for practical learning.
 [Short Demo Video](https://drive.google.com/file/d/1Enerqtij1bgkM1a4NmMR8Km2thOXkJ2q/view?usp=sharing)
 
-#### Video Walkthrough of the project
 
- - [Attach a brief video walkthrough of Weather application]()
-
-
-## Brief Explaination :-
+## Brief Explanation:-
     
 **1. App Component:**
 
@@ -38,7 +34,7 @@ Allows the user to select a city from a predefined list.
 
 **Behavior:**
 - Renders a Picker component to display a dropdown of available cities.
-- When the user selects a city, it triggers the handleCityChange function, updating the selected city state and invoking the onCitySelect callback with the selected city.
+- When the user selects a city, it triggers the handleCityChange function, updating the selected city-state and invoking the onCitySelect callback with the selected city.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -57,28 +53,28 @@ Display weather information for the selected city.
 - Uses React Native's Text component to display city name, temperature, and weather description.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-**3. weatherData.js :** 
+**3. weatherData.js:** 
 
 **Responsibility:** 
 To store mock weather data.
 
 
-## Follow-up Questions :-
+## Follow-up Questions:-
 
 #### 1. How did you implement the city selection functionality in the CitySelector component?
-- In the CitySelector component, I used Picker component provided by React Native to create a drop down list of all the cities present in the data. 
-- The Picker component was then populated with city names from the cities prop array(Passed through parent component). 
-- On selection of a city from the dropdown, the onValueChange event was used to trigger the handleCityChange function, updating the selected city state.
+- In the CitySelector component, I used the Picker component provided by React Native to create a drop-down list of all the cities present in the data. 
+- The Picker component was then populated with city names from the cities prop array(Passed through the parent component). 
+- On selection of a city from the dropdown, the onValueChange event was used to trigger the handleCityChange function, updating the selected city-state.
 
 #### 2. Did you encounter any challenges while integrating the Picker component for city selection?
 - It was straightforward to create the Picker component. 
 - However, managing the state update within the App.js component posed a bit of a challenge. 
-- Additionally, I attempted to apply CSS to the picker item, but later realized that I was using a deprecated package. 
+- Additionally, I attempted to apply CSS to the picker item but later realized that I was using a deprecated package. 
 - After installing the correct version of that package, I was able to work with it properly.
 
 #### 3. What styling did you apply using StyleSheet.create to format the displayed weather data?
 - I applied basic styling using StyleSheet.create to format the displayed weather data. 
-- Specifically, I used styles for Text components to control the font size, color, and alignment for displaying the city name, temperature, and weather description and background color for the main container.
+- Specifically, I used styles for Text components to control the font size, color, and alignment for displaying the city name, temperature, weather description, and background color for the main container.
 
 #### 4. Were there any specific considerations while displaying the weather description for the selected city?
 - Yes, The weather descriptions were displayed using a Text component, presenting a description (eg. sunny, cloudy, etc.) obtained from the description prop.
